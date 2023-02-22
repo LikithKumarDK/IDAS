@@ -1,0 +1,3679 @@
+{
+    "results": [
+        {
+            "className": "AdminSession",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "restricted": {
+                    "type": "Boolean"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "AdminUser"
+                },
+                "installationId": {
+                    "type": "String"
+                },
+                "sessionToken": {
+                    "type": "String"
+                },
+                "expiresAt": {
+                    "type": "Date"
+                },
+                "createdWith": {
+                    "type": "Object"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "AdminUser",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "username": {
+                    "type": "String"
+                },
+                "password": {
+                    "type": "String"
+                },
+                "email": {
+                    "type": "String"
+                },
+                "emailVerified": {
+                    "type": "Boolean"
+                },
+                "authData": {
+                    "type": "Object"
+                },
+                "_hashed_password": {
+                    "type": "String"
+                },
+                "phone": {
+                    "type": "String"
+                },
+                "showNotification": {
+                    "type": "Boolean"
+                },
+                "language": {
+                    "type": "String"
+                },
+                "displayName": {
+                    "type": "String"
+                },
+                "status": {
+                    "type": "String"
+                },
+                "lastLogin": {
+                    "type": "Date"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "AqlInspectionResultMaster",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "ac": {
+                    "type": "Number"
+                },
+                "re": {
+                    "type": "Number"
+                },
+                "aqlRate": {
+                    "type": "Number"
+                },
+                "sampleCharacter": {
+                    "type": "String"
+                },
+                "acceptanceLevel": {
+                    "type": "String"
+                },
+                "sampleSize": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "AqlSampleCharacter",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "sizeFrom": {
+                    "type": "Number"
+                },
+                "sizeTo": {
+                    "type": "Number"
+                },
+                "inspectionLevel": {
+                    "type": "String"
+                },
+                "sampleCharacter": {
+                    "type": "String"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "Contract",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "expiresAt": {
+                    "type": "Date"
+                },
+                "plan": {
+                    "type": "Pointer",
+                    "targetClass": "Plan"
+                },
+                "subscription": {
+                    "type": "Pointer",
+                    "targetClass": "Subscription"
+                },
+                "daysLeft": {
+                    "type": "Number"
+                },
+                "userGroupCount": {
+                    "type": "Number"
+                },
+                "summaryOfStyleFileStorage": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {},
+                "get": {},
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "DefectCategory",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "defectFormat": {
+                    "type": "Pointer",
+                    "targetClass": "DefectFormat"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                },
+                "_p_defectFormat_1": {
+                    "_p_defectFormat": 1
+                }
+            }
+        },
+        {
+            "className": "DefectCategoryTranslation",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "defectCategory": {
+                    "type": "Pointer",
+                    "targetClass": "DefectCategory"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "language": {
+                    "type": "Pointer",
+                    "targetClass": "Language"
+                },
+                "status": {
+                    "type": "Boolean"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "DefectFormat",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "group": {
+                    "type": "Pointer",
+                    "targetClass": "Group"
+                },
+                "comment": {
+                    "type": "String"
+                },
+                "idasFormat": {
+                    "type": "Boolean"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "DefectFormatTranslation",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "language": {
+                    "type": "Pointer",
+                    "targetClass": "Language"
+                },
+                "defectFormat": {
+                    "type": "Pointer",
+                    "targetClass": "DefectFormat"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "status": {
+                    "type": "Boolean"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "DefectItem",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "defectCategory": {
+                    "type": "Pointer",
+                    "targetClass": "DefectCategory"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "defectFormat": {
+                    "type": "Pointer",
+                    "targetClass": "DefectFormat"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "defectItemNumber": {
+                    "type": "Number"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                },
+                "linkedItems": {
+                    "type": "Array"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                },
+                "_p_defectCategory_1": {
+                    "_p_defectCategory": 1
+                }
+            }
+        },
+        {
+            "className": "DefectItemTranslation",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "language": {
+                    "type": "Pointer",
+                    "targetClass": "Language"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "defectItem": {
+                    "type": "Pointer",
+                    "targetClass": "DefectItem"
+                },
+                "status": {
+                    "type": "Boolean"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "FavUser",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "favourite": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "status": {
+                    "type": "String"
+                },
+                "nickname": {
+                    "type": "String"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "Group",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "status": {
+                    "type": "String"
+                },
+                "workTimeFrom": {
+                    "type": "String"
+                },
+                "workTimeTo": {
+                    "type": "String"
+                },
+                "conversionValue": {
+                    "type": "String"
+                },
+                "inspectionLevel": {
+                    "type": "String"
+                },
+                "reportLanguages": {
+                    "type": "Array"
+                },
+                "skusInReport": {
+                    "type": "Boolean"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "GroupFactoryLine",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "group": {
+                    "type": "Pointer",
+                    "targetClass": "Group"
+                },
+                "lineName": {
+                    "type": "String"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                },
+                "_p_group_1": {
+                    "_p_group": 1
+                }
+            }
+        },
+        {
+            "className": "GroupRole",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "addUser": {
+                    "type": "Boolean"
+                },
+                "updateGroup": {
+                    "type": "Boolean"
+                },
+                "icon": {
+                    "type": "File"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                },
+                "availableInUi": {
+                    "type": "Boolean"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "GroupRoleTranslation",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "language": {
+                    "type": "Pointer",
+                    "targetClass": "Language"
+                },
+                "groupRole": {
+                    "type": "Pointer",
+                    "targetClass": "GroupRole"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "GroupUser",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "group": {
+                    "type": "Pointer",
+                    "targetClass": "Group"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "role": {
+                    "type": "Pointer",
+                    "targetClass": "GroupRole"
+                },
+                "recordupdate": {
+                    "type": "Date"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {},
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "Information",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "title": {
+                    "type": "String"
+                },
+                "htmlContent": {
+                    "type": "String"
+                },
+                "type": {
+                    "type": "String"
+                },
+                "file": {
+                    "type": "File"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                },
+                "language": {
+                    "type": "Pointer",
+                    "targetClass": "Language"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {},
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "InspectionCorrection",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "inspectionSetting": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionReportSetting"
+                },
+                "defectType": {
+                    "type": "String"
+                },
+                "checkType": {
+                    "type": "String"
+                },
+                "factoryLine": {
+                    "type": "Pointer",
+                    "targetClass": "GroupFactoryLine"
+                },
+                "sku": {
+                    "type": "Pointer",
+                    "targetClass": "StyleSku"
+                },
+                "defectItem": {
+                    "type": "Pointer",
+                    "targetClass": "DefectItem"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "reportType": {
+                    "type": "String"
+                },
+                "quantity": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "InspectionEditComment",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "inspectionSetting": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionReportSetting"
+                },
+                "comment": {
+                    "type": "String"
+                },
+                "editType": {
+                    "type": "String"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                },
+                "_p_inspectionSetting_1": {
+                    "_p_inspectionSetting": 1
+                }
+            }
+        },
+        {
+            "className": "InspectionReport",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "quantity": {
+                    "type": "Number"
+                },
+                "inspectionSetting": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionReportSetting"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "reportType": {
+                    "type": "String"
+                },
+                "defectItem": {
+                    "type": "Pointer",
+                    "targetClass": "DefectItem"
+                },
+                "mediaInspection": {
+                    "type": "Pointer",
+                    "targetClass": "MediaInspection"
+                },
+                "defectType": {
+                    "type": "String"
+                },
+                "status": {
+                    "type": "String"
+                },
+                "factoryLine": {
+                    "type": "Pointer",
+                    "targetClass": "GroupFactoryLine"
+                },
+                "sku": {
+                    "type": "Pointer",
+                    "targetClass": "StyleSku"
+                },
+                "defectSide": {
+                    "type": "String"
+                },
+                "checkType": {
+                    "type": "String"
+                },
+                "inspectionDate": {
+                    "type": "Date"
+                },
+                "mobileId": {
+                    "type": "String"
+                },
+                "inspectionSave": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionSave"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                },
+                "_p_inspectionSetting_1__p_defectItem_1__p_sku_1": {
+                    "_p_inspectionSetting": 1,
+                    "_p_defectItem": 1,
+                    "_p_sku": 1
+                },
+                "_p_factoryLine_1": {
+                    "_p_factoryLine": 1
+                },
+                "_p_sku_1": {
+                    "_p_sku": 1
+                },
+                "_p_inspectionSetting_1": {
+                    "_p_inspectionSetting": 1
+                },
+                "mobileId_1": {
+                    "mobileId": 1
+                }
+            }
+        },
+        {
+            "className": "InspectionReportComment",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "comment": {
+                    "type": "String"
+                },
+                "media": {
+                    "type": "Pointer",
+                    "targetClass": "MediaInspection"
+                },
+                "inspectionReport": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionReport"
+                },
+                "status": {
+                    "type": "Boolean"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "InspectionReportSetting",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "checkType": {
+                    "type": "String"
+                },
+                "reportTag": {
+                    "type": "Number"
+                },
+                "numberOfInspector": {
+                    "type": "Number"
+                },
+                "inspectionDate": {
+                    "type": "Date"
+                },
+                "startTime": {
+                    "type": "String"
+                },
+                "endTime": {
+                    "type": "String"
+                },
+                "style": {
+                    "type": "Pointer",
+                    "targetClass": "Style"
+                },
+                "inspectionType": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionType"
+                },
+                "sku": {
+                    "type": "Pointer",
+                    "targetClass": "StyleSku"
+                },
+                "factoryLine": {
+                    "type": "Pointer",
+                    "targetClass": "GroupFactoryLine"
+                },
+                "locked": {
+                    "type": "Boolean"
+                },
+                "publish": {
+                    "type": "Boolean"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "extractionRate": {
+                    "type": "Number"
+                },
+                "acceptableLevel": {
+                    "type": "Number"
+                },
+                "inspectionLevel": {
+                    "type": "String"
+                },
+                "aqlType": {
+                    "type": "String"
+                },
+                "conversionValue": {
+                    "type": "Number"
+                },
+                "aqlRate": {
+                    "type": "Number"
+                },
+                "shipmentQty": {
+                    "type": "Number"
+                },
+                "aqlAc": {
+                    "type": "Number"
+                },
+                "aqlRe": {
+                    "type": "Number"
+                },
+                "acceptanceLevel": {
+                    "type": "String"
+                },
+                "sampleSize": {
+                    "type": "Number"
+                },
+                "defectRate": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                },
+                "_p_style_1": {
+                    "_p_style": 1
+                }
+            }
+        },
+        {
+            "className": "InspectionReportSummary",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "checkType": {
+                    "type": "String"
+                },
+                "defectItem": {
+                    "type": "Pointer",
+                    "targetClass": "DefectItem"
+                },
+                "defectSide": {
+                    "type": "String"
+                },
+                "defectType": {
+                    "type": "String"
+                },
+                "reportType": {
+                    "type": "String"
+                },
+                "totalQuantity": {
+                    "type": "Number"
+                },
+                "inspectionSetting": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionReportSetting"
+                },
+                "sku": {
+                    "type": "Pointer",
+                    "targetClass": "StyleSku"
+                },
+                "factoryLine": {
+                    "type": "Pointer",
+                    "targetClass": "GroupFactoryLine"
+                },
+                "style": {
+                    "type": "Pointer",
+                    "targetClass": "Style"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                },
+                "_p_inspectionSetting_1__p_sku_1__p_style_1": {
+                    "_p_inspectionSetting": 1,
+                    "_p_sku": 1,
+                    "_p_style": 1
+                },
+                "_p_sku_1": {
+                    "_p_sku": 1
+                },
+                "_p_inspectionSetting_1__p_sku_1__p_style_1__p_defectItem_1": {
+                    "_p_inspectionSetting": 1,
+                    "_p_sku": 1,
+                    "_p_style": 1,
+                    "_p_defectItem": 1
+                },
+                "_p_factoryLine_1": {
+                    "_p_factoryLine": 1
+                }
+            }
+        },
+        {
+            "className": "InspectionSave",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "factoryLine": {
+                    "type": "Pointer",
+                    "targetClass": "GroupFactoryLine"
+                },
+                "styleSku": {
+                    "type": "Pointer",
+                    "targetClass": "StyleSku"
+                },
+                "inspectionSetting": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionReportSetting"
+                },
+                "inspectionCount": {
+                    "type": "Number"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "checkType": {
+                    "type": "String"
+                },
+                "mobileId": {
+                    "type": "String"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                },
+                "mobileId_1": {
+                    "mobileId": 1
+                }
+            }
+        },
+        {
+            "className": "InspectionType",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "icon": {
+                    "type": "File"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {},
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "InspectionTypeTranslation",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "inspectionType": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionType"
+                },
+                "language": {
+                    "type": "Pointer",
+                    "targetClass": "Language"
+                },
+                "name": {
+                    "type": "String"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "Language",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "code": {
+                    "type": "String"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {},
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "LoginHistory",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "deviceAddress": {
+                    "type": "String"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "device": {
+                    "type": "String"
+                },
+                "eventName": {
+                    "type": "String"
+                },
+                "eventDetails": {
+                    "type": "String"
+                },
+                "session": {
+                    "type": "Pointer",
+                    "targetClass": "_Session"
+                },
+                "adminuser": {
+                    "type": "Pointer",
+                    "targetClass": "AdminUser"
+                },
+                "installationId": {
+                    "type": "String"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "MediaInspection",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "file": {
+                    "type": "File"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "markerX": {
+                    "type": "Number"
+                },
+                "markerY": {
+                    "type": "Number"
+                },
+                "thumbnail": {
+                    "type": "File"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "MediaTemplate",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "file": {
+                    "type": "File"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "markerX": {
+                    "type": "Number"
+                },
+                "imageFile": {
+                    "type": "File"
+                },
+                "markeY": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "Order",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "quantity": {
+                    "type": "Number"
+                },
+                "jpyAmount": {
+                    "type": "Number"
+                },
+                "amount": {
+                    "type": "Number"
+                },
+                "period": {
+                    "type": "Number"
+                },
+                "plan": {
+                    "type": "Pointer",
+                    "targetClass": "Plan"
+                },
+                "jpyDiscountAmount": {
+                    "type": "Number"
+                },
+                "discountAmount": {
+                    "type": "Number"
+                },
+                "discountPercentage": {
+                    "type": "Number"
+                },
+                "payStatus": {
+                    "type": "String"
+                },
+                "pgTransId": {
+                    "type": "String"
+                },
+                "paymentMethod": {
+                    "type": "String"
+                },
+                "pgResponse": {
+                    "type": "String"
+                },
+                "custTxn": {
+                    "type": "String"
+                },
+                "marchTxn": {
+                    "type": "String"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "Otpcode",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "otp": {
+                    "type": "String"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "expiresAt": {
+                    "type": "Date"
+                },
+                "action": {
+                    "type": "String"
+                },
+                "emailid": {
+                    "type": "String"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "adminuser": {
+                    "type": "Pointer",
+                    "targetClass": "AdminUser"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {},
+                "get": {},
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {},
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "Plan",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "groups": {
+                    "type": "Number"
+                },
+                "styles": {
+                    "type": "Number"
+                },
+                "users": {
+                    "type": "Number"
+                },
+                "templates": {
+                    "type": "Number"
+                },
+                "reportAvailable": {
+                    "type": "String"
+                },
+                "period": {
+                    "type": "Number"
+                },
+                "rptSummary": {
+                    "type": "Boolean"
+                },
+                "rptDownload": {
+                    "type": "Boolean"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "amount": {
+                    "type": "Number"
+                },
+                "periodSkip": {
+                    "type": "Number"
+                },
+                "discounts": {
+                    "type": "Object"
+                },
+                "subscribeDays": {
+                    "type": "Array"
+                },
+                "userCanSubscribe": {
+                    "type": "Boolean"
+                },
+                "jpyAmount": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "Style",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "styleNo": {
+                    "type": "String"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "group": {
+                    "type": "Pointer",
+                    "targetClass": "Group"
+                },
+                "inspectFrom": {
+                    "type": "Date"
+                },
+                "inspectTo": {
+                    "type": "Date"
+                },
+                "material": {
+                    "type": "String"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "template": {
+                    "type": "Pointer",
+                    "targetClass": "TemplateType"
+                },
+                "inspectionTypes": {
+                    "type": "Array"
+                },
+                "defectFormat": {
+                    "type": "Pointer",
+                    "targetClass": "DefectFormat"
+                },
+                "status": {
+                    "type": "String"
+                },
+                "meterial": {
+                    "type": "String"
+                },
+                "acceptableLevel": {
+                    "type": "Number"
+                },
+                "extractionRate": {
+                    "type": "Number"
+                },
+                "responsible": {
+                    "type": "String"
+                },
+                "perPersonQty": {
+                    "type": "Number"
+                },
+                "quantity": {
+                    "type": "Number"
+                },
+                "refImage": {
+                    "type": "File"
+                },
+                "recordupdate": {
+                    "type": "Date"
+                },
+                "additionalImgArray": {
+                    "type": "Array"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                },
+                "name_1": {
+                    "name": 1
+                },
+                "styleNo_1": {
+                    "styleNo": 1
+                },
+                "_p_group_1": {
+                    "_p_group": 1
+                }
+            }
+        },
+        {
+            "className": "StyleSku",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "color": {
+                    "type": "String"
+                },
+                "size": {
+                    "type": "String"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "style": {
+                    "type": "Pointer",
+                    "targetClass": "Style"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                },
+                "isDeleted": {
+                    "type": "Boolean"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                },
+                "_p_style_1": {
+                    "_p_style": 1
+                }
+            }
+        },
+        {
+            "className": "Subscription",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "quantity": {
+                    "type": "Number"
+                },
+                "subMonths": {
+                    "type": "Number"
+                },
+                "plan": {
+                    "type": "Pointer",
+                    "targetClass": "Plan"
+                },
+                "subscriber": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "licenseKey": {
+                    "type": "String"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "AdminUser"
+                },
+                "status": {
+                    "type": "String"
+                },
+                "order": {
+                    "type": "Pointer",
+                    "targetClass": "Order"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "SubscriptionUsage",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "subscription": {
+                    "type": "Pointer",
+                    "targetClass": "Subscription"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "TemplateType",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "frontOutside": {
+                    "type": "Pointer",
+                    "targetClass": "MediaTemplate"
+                },
+                "backOutside": {
+                    "type": "Pointer",
+                    "targetClass": "MediaTemplate"
+                },
+                "frontInside": {
+                    "type": "Pointer",
+                    "targetClass": "MediaTemplate"
+                },
+                "backInside": {
+                    "type": "Pointer",
+                    "targetClass": "MediaTemplate"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "status": {
+                    "type": "String"
+                },
+                "idasTemplate": {
+                    "type": "Boolean"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "TemplateTypeTranslation",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "templateType": {
+                    "type": "Pointer",
+                    "targetClass": "TemplateType"
+                },
+                "language": {
+                    "type": "Pointer",
+                    "targetClass": "Language"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {},
+                "update": {},
+                "delete": {},
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "_Role",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "users": {
+                    "type": "Relation",
+                    "targetClass": "_User"
+                },
+                "roles": {
+                    "type": "Relation",
+                    "targetClass": "_Role"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                },
+                "name_1": {
+                    "name": 1
+                }
+            }
+        },
+        {
+            "className": "_Session",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "restricted": {
+                    "type": "Boolean"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "installationId": {
+                    "type": "String"
+                },
+                "sessionToken": {
+                    "type": "String"
+                },
+                "expiresAt": {
+                    "type": "Date"
+                },
+                "createdWith": {
+                    "type": "Object"
+                },
+                "sessionUser": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "sessionAdminUser": {
+                    "type": "Pointer",
+                    "targetClass": "AdminUser"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "_User",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "username": {
+                    "type": "String"
+                },
+                "password": {
+                    "type": "String"
+                },
+                "email": {
+                    "type": "String"
+                },
+                "emailVerified": {
+                    "type": "Boolean"
+                },
+                "authData": {
+                    "type": "Object"
+                },
+                "phone": {
+                    "type": "String"
+                },
+                "displayName": {
+                    "type": "String"
+                },
+                "language": {
+                    "type": "String"
+                },
+                "termsAndConditions": {
+                    "type": "Boolean"
+                },
+                "status": {
+                    "type": "String"
+                },
+                "forcedLogin": {
+                    "type": "String"
+                },
+                "lastLogin": {
+                    "type": "Date"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {},
+                "protectedFields": {}
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                },
+                "username_1": {
+                    "username": 1
+                },
+                "email_1": {
+                    "email": 1
+                }
+            }
+        },
+        {
+            "className": "MeasurementFormat",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "group": {
+                    "type": "Pointer",
+                    "targetClass": "Group"
+                },
+                "comment": {
+                    "type": "String"
+                },
+                "idasFormat": {
+                    "type": "Boolean"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                },
+                "sketchFile": {
+                    "type": "String"
+                },
+                "refImage": {
+                    "type": "File"
+                },
+                "alphaIdentifier": {
+                    "type": "Boolean"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "StyleMeasurementHeader",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "style": {
+                    "type": "Pointer",
+                    "targetClass": "Style"
+                },
+                "measurementFormat": {
+                    "type": "Pointer",
+                    "targetClass": "MeasurementFormat"
+                },
+                "toleranceSampleValue": {
+                    "type": "Number"
+                },
+                "toleranceSamplePerc": {
+                    "type": "Number"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                },
+                "specificationMetrics": {
+                    "type": "String"
+                },
+                "toleranceMetrics": {
+                    "type": "String"
+                },
+                "measurementFormatLabel": {
+                    "type": "String"
+                },
+                "measurementFormatId": {
+                    "type": "Pointer",
+                    "targetClass": "MeasurementFormat"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "StyleSKUMeasurementConf",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "styleSKU": {
+                    "type": "Pointer",
+                    "targetClass": "StyleSku"
+                },
+                "measurementFlag": {
+                    "type": "Boolean"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "StyleMeasurement",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "style": {
+                    "type": "Pointer",
+                    "targetClass": "Style"
+                },
+                "measurementItem": {
+                    "type": "Pointer",
+                    "targetClass": "MeasurementItem"
+                },
+                "size": {
+                    "type": "String"
+                },
+                "measurementValue": {
+                    "type": "String"
+                },
+                "toleranceValue": {
+                    "type": "String"
+                },
+                "isDeleted": {
+                    "type": "Boolean"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "MeasurementFormatTranslation",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "language": {
+                    "type": "Pointer",
+                    "targetClass": "Language"
+                },
+                "measureFormat": {
+                    "type": "Pointer",
+                    "targetClass": "MeasurementFormat"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "status": {
+                    "type": "Boolean"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "MeasurementItem",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "measureFormat": {
+                    "type": "Pointer",
+                    "targetClass": "MeasurementFormat"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "sortOrder": {
+                    "type": "Number"
+                },
+                "measureItemNumber": {
+                    "type": "Number"
+                },
+                "measurementIdentity": {
+                    "type": "String"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "MeasurementItemTranslation",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "language": {
+                    "type": "Pointer",
+                    "targetClass": "Language"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "measureItem": {
+                    "type": "Pointer",
+                    "targetClass": "MeasurementItem"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "InspectionMeasurementSummary",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "totalSamplingCount": {
+                    "type": "Number"
+                },
+                "styleSKU": {
+                    "type": "Pointer",
+                    "targetClass": "StyleSku"
+                },
+                "inspectionSettings": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionReportSetting"
+                },
+                "style": {
+                    "type": "Pointer",
+                    "targetClass": "Style"
+                },
+                "totalBGrade": {
+                    "type": "Number"
+                },
+                "totalAGrade": {
+                    "type": "Number"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "InspectionMeasurementRecord",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "status": {
+                    "type": "Boolean"
+                },
+                "entryNo": {
+                    "type": "Number"
+                },
+                "inspectionMeasurementSummary": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionMeasurementSummary"
+                },
+                "defectCount": {
+                    "type": "Number"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "styleSKU": {
+                    "type": "Pointer",
+                    "targetClass": "StyleSku"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "InspectionMeasurementDetails",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "inspectionMeasurementRecord": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionMeasurementRecord"
+                },
+                "toleranceStatus": {
+                    "type": "Boolean"
+                },
+                "toleranceDiff": {
+                    "type": "Number"
+                },
+                "inspectionSettings": {
+                    "type": "Pointer",
+                    "targetClass": "InspectionReportSetting"
+                },
+                "inputData": {
+                    "type": "Number"
+                },
+                "styleMeasurement": {
+                    "type": "Pointer",
+                    "targetClass": "StyleMeasurement"
+                },
+                "user": {
+                    "type": "Pointer",
+                    "targetClass": "_User"
+                },
+                "styleSKU": {
+                    "type": "Pointer",
+                    "targetClass": "StyleSku"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        },
+        {
+            "className": "inspectionTypeIcons",
+            "fields": {
+                "objectId": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "ACL": {
+                    "type": "ACL"
+                },
+                "image": {
+                    "type": "Bytes"
+                },
+                "name": {
+                    "type": "String"
+                }
+            },
+            "classLevelPermissions": {
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "addField": {
+                    "*": true
+                },
+                "protectedFields": {
+                    "*": []
+                }
+            },
+            "indexes": {
+                "_id_": {
+                    "_id": 1
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "results": [
+        {
+            "objectId": "673CVFTvAq",
+            "username": "ogawa.chiemi",
+            "email": "ogawa.chiemi@catech.co.jp",
+            "createdAt": "2019-09-20T14:24:29.702Z",
+            "updatedAt": "2021-01-16T05:57:09.043Z",
+            "emailVerified": true,
+            "status": "active",
+            "language": "en",
+            "lastLogin": {
+                "__type": "Date",
+                "iso": "2019-12-06T13:31:44.103Z"
+            },
+            "password": "$2b$10$Lr5zxF.6o0pEid4cJy9WAuDTGqzXRmthO06NeoIQ6sSSwMWretGWG"
+        },
+        {
+            "objectId": "7KnEkAAA8n",
+            "username": "chetakrm",
+            "phone": "9480515532",
+            "email": "chetak@nichi.com",
+            "createdAt": "2019-09-20T13:59:43.632Z",
+            "updatedAt": "2021-05-04T06:47:02.476Z",
+            "emailVerified": true,
+            "language": "en",
+            "showNotification": false,
+            "displayName": "Chetak",
+            "lastLogin": {
+                "__type": "Date",
+                "iso": "2019-12-06T13:45:18.207Z"
+            },
+            "status": "active",
+            "password": "$2b$10$4Avn5IrhRLU3RY85pYEM/eMDsu5/OpKCns6XQ8NI802dm4vPnCNlK"
+        },
+        {
+            "objectId": "FCzWrjEXq0",
+            "username": "okawara.toshiya",
+            "email": "okawara.toshiya@catech.co.jp",
+            "createdAt": "2019-09-20T14:24:00.096Z",
+            "updatedAt": "2019-09-20T14:26:03.401Z",
+            "emailVerified": true,
+            "password": "$2b$10$v5AQSaaHwFGT6irRxH2/Hu04NLC.uWHsG.kPQz01RjIMPJ2jFteES"
+        },
+        {
+            "objectId": "kjVQYDt59G",
+            "username": "Catech",
+            "email": "support.india@catech.co.jp",
+            "createdAt": "2019-09-20T14:23:26.357Z",
+            "updatedAt": "2022-10-18T08:24:38.400Z",
+            "emailVerified": true,
+            "language": "en",
+            "showNotification": false,
+            "displayName": "velu",
+            "lastLogin": {
+                "__type": "Date",
+                "iso": "2020-02-18T10:40:57.181Z"
+            },
+            "status": "active",
+            "password": "$2b$10$0xZqqSCa35DXUl6.luSDAeCJieSy2jA3q4fJHpqQJOLmwuQ6TKXWO"
+        },
+        {
+            "objectId": "u7BhemlF0A",
+            "username": "hara.yusuke",
+            "email": "hara.yusuke@catech.co.jp",
+            "createdAt": "2019-09-20T14:24:50.366Z",
+            "updatedAt": "2022-10-13T01:02:19.789Z",
+            "emailVerified": true,
+            "status": "active",
+            "language": "en",
+            "lastLogin": {
+                "__type": "Date",
+                "iso": "2019-09-25T11:51:44.470Z"
+            },
+            "password": "$2b$10$ZBzhfaPYcGWgHLA2PZQOMeW2885KX9H9ts6fLiajTQr2CW350hu.q"
+        },
+        {
+            "objectId": "z9Gq3Ske0z",
+            "username": "t.okada",
+            "createdAt": "2022-10-13T05:00:36.507Z",
+            "updatedAt": "2023-01-06T14:22:21.670Z",
+            "email": "t.okada@n-v-l.co",
+            "emailVerified": true,
+            "status": "active",
+            "language": "ja",
+            "lastLogin": {
+                "__type": "Date",
+                "iso": "2020-04-01T09:53:37.343Z"
+            },
+            "displayName": "Okada",
+            "password": "$2b$10$tvEFHl9i12bjSeTjWZwwd.cmioPt/DY6oSubequexu/fU1fV503OW"
+        }
+    ]
+}

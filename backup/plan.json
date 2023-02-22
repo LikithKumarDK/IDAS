@@ -1,0 +1,274 @@
+{
+    "results": [
+        {
+            "objectId": "14zw66CBOU",
+            "name": "GOLD+",
+            "groups": 50,
+            "styles": 30,
+            "users": 30,
+            "templates": 1,
+            "reportAvailable": "24",
+            "period": 30,
+            "rptSummary": true,
+            "rptDownload": true,
+            "sortOrder": 3,
+            "status": true,
+            "createdAt": "2019-09-24T13:31:26.941Z",
+            "updatedAt": "2022-12-02T12:57:33.090Z",
+            "amount": 80,
+            "periodSkip": 30,
+            "discounts": {
+                "discountPeriod": [
+                    180,
+                    360
+                ],
+                "discountPercent": [
+                    10,
+                    20
+                ]
+            },
+            "subscribeDays": [
+                30,
+                60,
+                90,
+                120,
+                180,
+                360
+            ],
+            "userCanSubscribe": true,
+            "jpyAmount": 8800,
+            "planFileStorage": "20000000",
+            "styleFileStorage": "10000000",
+            "ACL": {
+                "*": {
+                    "read": true
+                }
+            }
+        },
+        {
+            "objectId": "KyVEwjKPEu",
+            "name": "TRIAL",
+            "createdAt": "2019-05-30T09:56:26.739Z",
+            "updatedAt": "2022-12-02T12:51:33.644Z",
+            "groups": 1,
+            "styles": 30,
+            "users": 30,
+            "templates": 1,
+            "reportAvailable": "1",
+            "period": 30,
+            "rptSummary": false,
+            "rptDownload": false,
+            "sortOrder": 0,
+            "status": true,
+            "amount": 0,
+            "periodSkip": 30,
+            "discounts": {
+                "discountPeriod": [
+                    180,
+                    360
+                ],
+                "discountPercent": [
+                    10,
+                    20
+                ]
+            },
+            "subscribeDays": [
+                30,
+                60,
+                90,
+                120,
+                180,
+                360
+            ],
+            "userCanSubscribe": false,
+            "jpyAmount": 0,
+            "planFileStorage": "20000000",
+            "styleFileStorage": "10000000",
+            "ACL": {
+                "*": {
+                    "read": true
+                }
+            }
+        },
+        {
+            "objectId": "Nco7bGWEEy",
+            "name": "SILVER+",
+            "groups": 25,
+            "styles": 30,
+            "users": 30,
+            "templates": 1,
+            "reportAvailable": "12",
+            "period": 30,
+            "rptSummary": true,
+            "rptDownload": true,
+            "createdAt": "2019-09-20T13:48:21.057Z",
+            "updatedAt": "2020-05-08T11:57:01.858Z",
+            "sortOrder": 2,
+            "status": true,
+            "amount": 50,
+            "periodSkip": 30,
+            "discounts": {
+                "discountPeriod": [
+                    180,
+                    360
+                ],
+                "discountPercent": [
+                    10,
+                    20
+                ]
+            },
+            "subscribeDays": [
+                30,
+                60,
+                90,
+                120,
+                180,
+                360
+            ],
+            "userCanSubscribe": true,
+            "jpyAmount": 5500,
+            "planFileStorage": "20000000",
+            "styleFileStorage": "10000000",
+            "ACL": {
+                "*": {
+                    "read": true
+                }
+            }
+        },
+        {
+            "objectId": "eX35c46itR",
+            "name": "PLATINUM++",
+            "groups": 100,
+            "styles": 30,
+            "users": 30,
+            "templates": 1,
+            "reportAvailable": "36",
+            "period": 30,
+            "rptSummary": true,
+            "rptDownload": true,
+            "sortOrder": 4,
+            "status": true,
+            "createdAt": "2019-09-24T13:31:26.941Z",
+            "updatedAt": "2020-05-08T11:57:14.351Z",
+            "amount": 150,
+            "periodSkip": 30,
+            "discounts": {
+                "discountPeriod": [
+                    180,
+                    360
+                ],
+                "discountPercent": [
+                    10,
+                    20
+                ]
+            },
+            "subscribeDays": [
+                30,
+                60,
+                90,
+                120,
+                180,
+                360
+            ],
+            "userCanSubscribe": true,
+            "jpyAmount": 16500,
+            "planFileStorage": "6000000",
+            "styleFileStorage": "5000000",
+            "ACL": {
+                "*": {
+                    "read": true
+                }
+            }
+        },
+        {
+            "objectId": "sFAuQxvAMH",
+            "name": "DIAMOND++",
+            "groups": -1,
+            "styles": 30,
+            "users": 30,
+            "templates": 1,
+            "reportAvailable": "36",
+            "period": 30,
+            "rptSummary": true,
+            "rptDownload": true,
+            "sortOrder": 5,
+            "status": true,
+            "createdAt": "2019-09-24T13:31:26.941Z",
+            "updatedAt": "2020-05-08T11:57:22.296Z",
+            "amount": 270,
+            "periodSkip": 30,
+            "discounts": {
+                "discountPeriod": [
+                    180,
+                    360
+                ],
+                "discountPercent": [
+                    10,
+                    20
+                ]
+            },
+            "subscribeDays": [
+                30,
+                60,
+                90,
+                120,
+                180,
+                360
+            ],
+            "userCanSubscribe": true,
+            "jpyAmount": 29700,
+            "planFileStorage": "20000000",
+            "styleFileStorage": "10000000",
+            "ACL": {
+                "*": {
+                    "read": true
+                }
+            }
+        },
+        {
+            "objectId": "ydAk6f7Z34",
+            "name": "BRONZE",
+            "groups": 3,
+            "styles": 30,
+            "users": 30,
+            "templates": 1,
+            "reportAvailable": "6",
+            "period": 30,
+            "rptSummary": false,
+            "rptDownload": false,
+            "createdAt": "2019-09-20T13:48:20.311Z",
+            "updatedAt": "2020-05-08T11:56:50.565Z",
+            "sortOrder": 1,
+            "status": true,
+            "amount": 3,
+            "periodSkip": 30,
+            "discounts": {
+                "discountPeriod": [
+                    180,
+                    360
+                ],
+                "discountPercent": [
+                    10,
+                    20
+                ]
+            },
+            "subscribeDays": [
+                30,
+                60,
+                90,
+                120,
+                180,
+                360
+            ],
+            "userCanSubscribe": true,
+            "jpyAmount": 330,
+            "planFileStorage": "20000000",
+            "styleFileStorage": "10000000",
+            "ACL": {
+                "*": {
+                    "read": true
+                }
+            }
+        }
+    ]
+}

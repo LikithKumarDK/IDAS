@@ -1,0 +1,34 @@
+{
+    "results": [
+        {
+            "objectId": "Igs5LjiDfD",
+            "name": "general",
+            "createdAt": "2019-05-31T08:57:54.551Z",
+            "updatedAt": "2019-05-31T09:00:48.197Z",
+            "users": {
+                "__type": "Relation",
+                "className": "_User"
+            },
+            "roles": {
+                "__type": "Relation",
+                "className": "_Role"
+            },
+            "ACL": {}
+        },
+        {
+            "objectId": "Y4YcF9p1qG",
+            "name": "admin",
+            "createdAt": "2019-08-13T07:14:25.817Z",
+            "updatedAt": "2019-08-27T09:48:26.331Z",
+            "users": {
+                "__type": "Relation",
+                "className": "_User"
+            },
+            "roles": {
+                "__type": "Relation",
+                "className": "_Role"
+            },
+            "ACL": {}
+        }
+    ]
+}
